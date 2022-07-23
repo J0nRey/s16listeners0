@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--agregar bootstrap antes del ccs por que va en cascada-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <!--agregar css-->
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>JavaScript-11-06/04/2021-3</title>
+</head>
+<body>
+    <!--//ejemplo 2 listener-->
+
+    <input id="my-input" type="text" class="form-control w-50 mx-auto mt3" value="Algun valor">
+    <h1 id="my-heading" >hola</h1>
+
+
+<!--//ejemplo con boton listener-->
+    <button type="button" class=" test-btn btn btn-secondary" id="button-1" data-custom-key="value button 1">Botton 1</button>
+    <button type="button" class=" test-btn btn btn-primary" id="button-2" data-custom-key="value button 2" data-other-attribute="other value button 2">Botton 2</button>
+    <button type="button" class=" test-btn btn btn-warning" id="button-2" data-custom-key="value button 3">Botton 3</button>
+    <button type="button" class=" test-btn btn btn-danger" id="button-2" data-custom-key="value button 4">Botton 4</button>
+    <button type="button" class=" test-btn btn btn-success" id="button-2" data-custom-key="value button 5">Botton 5</button>
+
+
+
+    <div class="container mt-3">
+        <div class="row">
+            <div class="col-6">
+                <form action="" class="bg-dark text-whrte p-3 border rounded">
+                    <div class="form-group">
+                        <label for="">Nombre del Koder</label>
+                        <input id="koder-name" type="text" class="form-control">
+                    </div>
+                    
+<!--                button    -->                    
+                    <button id="save-koder" type="button" class="btn btn-primary">Agregar Koder</button>
+                    
+                </form>
+            </div>
+            <div class="col-6">
+                <ul id="koder-list" class="list-group">
+<!--                <th>&nbsp;</th>    -->
+                    <li class="list-group-item">Koder 1</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="/s16listeners0/js/main.js" ></script>
+</body>
+</html>
